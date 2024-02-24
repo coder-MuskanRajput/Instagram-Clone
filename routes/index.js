@@ -58,7 +58,7 @@ router.get('/like/post/:id', isLoggedIn, async function(req, res) {
    //if not liked , like it
 
    if(post.likes.indexOf(user._id) === -1){
-    post.lokes.push(user._id)
+    post.likes.push(user._id)
    }
    else{
     post.likes.splice(post.likes.indexOf(user._id),1);
